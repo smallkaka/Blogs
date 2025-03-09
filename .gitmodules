@@ -1,0 +1,3 @@
+[submodule "themes/hugp-next"]
+	path = themes/hugp-next
+	url = https://github.com/hugo-next/hugo-theme-next.git
