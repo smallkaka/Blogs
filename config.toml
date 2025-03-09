@@ -1,2 +1,3 @@
 baseURL = 'https://javathoughts.cn/'
 title = 'My New Hugo Site'
+theme = 'Hugo NexT'
