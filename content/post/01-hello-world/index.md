@@ -2,8 +2,7 @@
 title: "Hello World"
 description: "摘要"
 keywords: "hugo"
-
-date: 2025-03-010T16:08:02+08:00
+date: 2025-03-10T16:08:02+08:00
 lastmod: 2025-03-10T19:08:02+08:00
 
 categories:
