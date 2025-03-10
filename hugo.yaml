@@ -51,12 +51,12 @@ languages:
           weight: 2
         - identifier: papers
           name: Papers
-          pageRef: /posts
+          pageRef: /post
           pre: book
           weight: 3
         - identifier: testCategory
           name: testCategory
-          pageRef: /posts/
+          pageRef: /post/
           weight: 1
           parent: papers
         # - identifier: example
@@ -217,13 +217,13 @@ menus:
 
     - identifier: papers
       name: 文章
-      url: /posts/
+      url: /post/
       pre: book
       weight: 3
 
     - identifier: testCategory
       name: 测试分类
-      pageRef: /posts/
+      pageRef: /post/
       weight: 1
       parent: papers
 
@@ -241,7 +241,7 @@ params:
   # 需要显示文章的部分，即content目录下的文件夹名称
   # Sections for show in home & archive page
   # and it's forlder name which under content
-  mainSections: ["posts"]
+  mainSections: ["post"]
   # 年，月，日及时间的格式化样式
   # Format style for year,month,date & time
   yearFormat: "2006"
@@ -296,7 +296,7 @@ params:
     license: by-nc-sa
     # 可选配置： big | small
     # Available values: big | small
-    size: big
+    size: small
     # 侧边栏显示
     # Show in sidebar
     sidebar: true
@@ -373,7 +373,7 @@ params:
     rounded: true
     # 开启头像随鼠标转动动画
     # If true, the avatar will be rotated with the cursor.
-    rotated: true
+    rotated: false
   siteState:
     # 是否在侧边栏显示文章、分类、标签信息
     # Posts / Categories / Tags in sidebar.
@@ -396,7 +396,7 @@ params:
   # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
   socials:
     social0: Github || https://github.com/smallkaka || fab fa-github
-    #social1: E-Mail || mailto:yourname@gmail.com || fa fa-envelope
+    social1: E-Mail || xumax1999@qq.com || fa fa-envelope
     # social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
     #Google: https://plus.google.com/yourname || fab fa-google
     #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -490,7 +490,7 @@ params:
 
     # 显示 Hugo 和 NexT 支持
     # Powered by Hugo & NexT
-    powered: true
+    powered: false
 
     # 国内 ICP 备案和公安网备信息
     # Beian ICP and gongan information for Chinese users.
@@ -937,55 +937,7 @@ params:
     reaction: true
     reactionText: ["点赞", "踩一下", "得意", "不屑", "尴尬", "睡觉"]
     reactionTitle: "你认为这篇文章怎么样？"
-    serverURL: #<your waline server url>
-  # Waline(2) 与 Waline3 无法兼容只能是二选一
-  # Waline3 采用的是ES模块开发，需要更高版本的浏览器才能支持，如考虑兼容性建议可优先选用Waline2
-  # waline3:
-  #   placeholder: "请文明发言哟 ヾ(≧▽≦*)o"
-  #   sofa: "快来发表你的意见吧 (≧∀≦)ゞ"
-  #   emoji: false
-  #   search: true
-  #   imgUploader: false
-  #   wordLimit: 200
-  #   requiredMeta: ['nick', 'mail']
-  #   reaction: true
-  #   reactionText: [ '点赞', '踩一下', '得意', '不屑', '尴尬', '睡觉']
-  #   reactionTitle: "你认为这篇文章怎么样？"
-  #   serverURL: #<your waline server url>
-
-  # Artalk 评论插件
-  # 更多配置信息请参考：https://artalk.js.org
-  # Artalk comments system
-  # More info see: https://artalk.js.org
-  # artalk:
-  #   site: "默认站点"
-  #   placeholder: "请文明发言，谢谢！"
-  #   server: #<your artalk server url>
-
-  # Artalk 评论插件
-  # 更多配置信息请参考：
-  # LiveRe comments system
-  # You can get your uid from https://livere.com/
-  # livere:
-  #   uid: # <your_uid>
-
-  # Utterances 评论插件
-  # 更多配置信息请参考：https://utteranc.es
-  # Utterances comments system
-  # For more information: https://utteranc.es
-  # utterances:
-  #   # Github 仓库地址，格式：用户名/仓库名称
-  #   # Github repository owner and name
-  #   repo: username/repo-name
-  #   # 问题标题的模式，可选值：pathname | url | title | og:title
-  #   # Available values: pathname | url | title | og:title
-  #   issueTerm: pathname
-  #   # 问题的标签分类
-  #   # Label flag for Github issues
-  #   label: comments
-  #   # 主题可选值： github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
-  #   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
-  #   theme: preferred-color-scheme
+    serverURL: https://3eyatoga.api.lncldglobal.com
 
   # Giscus 评论插件
   # 更多配置信息请参考：https://giscus.app
