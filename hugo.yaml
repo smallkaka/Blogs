@@ -221,17 +221,17 @@ menus:
       pre: book
       weight: 3
 
-    - identifier: testCategory
-      name: 测试分类
-      pageRef: /post/
-      weight: 1
-      parent: papers
+    - identifier: life
+      name: 生活记录
+      url: /posts/
+      pre: book
+      weight: 4
 
     - identifier: archives
       name: 归档
       pageRef: /archives
       pre: archive
-      weight: 4
+      weight: 5
 
 #-----------------------------------------
 # Hugo NexT 主题参数配置
